@@ -1,0 +1,31 @@
+{
+  "name": "aadc_components",
+  "version": "1.0.0",
+  "description": "AADC components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AustralianAntarcticDataCentre/components.git"
+  },
+  "keywords": [
+    "Antarctica",
+    "Australia",
+    "data",
+    "metadata"
+  ],
+  "author": "Australian Antarctic Data Centre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AustralianAntarcticDataCentre/components/issues"
+  },
+  "homepage": "https://data.antarctica.gov.au",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "gulp-stylus": "^1.3.4",
+    "stylus": "^0.49.3"
+  }
+}
