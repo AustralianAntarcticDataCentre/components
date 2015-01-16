@@ -1,0 +1,99 @@
+/*
+	Australian Antarctic Data Centre site styles
+*/
+
+h1 a
+h2 a
+h3 a
+	color inherit
+	display block
+
+h1 a:hover
+h2 a:hover
+h3 a:hover
+	text-decoration none
+
+
+.is_anonymous .show_authenticated
+.is_authenticated .show_anonymous
+	display none
+
+
+#site_header
+	background #07090C url("/images/header.jpg") repeat-x -200px -80px
+	border-radius 0 24px 0 0
+	padding 0
+
+
+#site_title_div
+	padding 12px 12px 12px 18px
+
+	a
+		color white
+		text-shadow #04080F 0 0 0.3em
+
+	a:hover
+		color #e6ecf8
+		text-decoration none
+
+
+#site_title
+	font-size 3em
+	font-weight bold
+	letter-spacing -0.025em
+	line-height 0.9em
+	margin 0
+	padding 0
+
+
+#site_subtitle
+	font-size 1.7em
+	font-weight 700
+	letter-spacing -0.025em
+	margin 0
+	padding 0
+
+
+#header_menu
+	margin 0
+
+
+	&.navbar-default
+		background-color transparent
+		background-image none
+		border 1px solid transparent
+		box-shadow none
+
+
+	li
+		background-color rgba(0, 0, 0, 0.75)
+
+
+	a
+		color #fff
+		font-weight bold
+		text-shadow none
+
+	a:hover
+		color #e6ecf8
+		text-decoration none
+
+
+.pre-wrap
+	white-space pre-wrap
+
+
+/*
+	Bootstrap fixes
+*/
+
+.btn-toolbar
+	margin-bottom 10px
+
+
+/*
+	OpenLayers fixes
+*/
+
+img.olTileImage
+	max-width none
