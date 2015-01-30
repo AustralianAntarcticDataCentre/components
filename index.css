@@ -17,7 +17,7 @@ h3 a:hover {
   display: none;
 }
 #site_header {
-  background: #07090c url("/images/header.jpg") repeat-x -200px -80px;
+  background: #07090c url("/components/images/header.jpg") repeat-x -200px -80px;
   border-radius: 0 24px 0 0;
   padding: 0;
 }
@@ -72,7 +72,7 @@ h3 a:hover {
   white-space: pre-wrap;
 }
 /*
-	Bootstrap fixes
+   	Bootstrap fixes
 */
 .btn-toolbar {
   margin-bottom: 10px;
