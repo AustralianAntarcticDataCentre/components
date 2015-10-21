@@ -9,6 +9,7 @@ deploy_components () {
 	docker run \
 		-d \
 		-v /home/docker-data/aadc-components/git:/usr/share/nginx/html \
+		-v /home/docker-data/aadc-components/git/deployment/default.conf:/etc/nginx/conf.d/default.conf \
 		-p 1000:80 \
 		--name aadc-components \
 		--restart=always \
