@@ -8,15 +8,15 @@ deploy_components () {
 	echo -e '----------------------------------------------------------------'
 	docker run \
 		-d \
-		-v /home/docker-data/aadc-components/git:/usr/share/nginx/html \
-		-v /home/docker-data/aadc-components/git/deployment/default.conf:/etc/nginx/conf.d/default.conf \
-		-p 1000:80 \
+		-v $DIR_MOUNT_GIT:/usr/share/nginx/html \
+		-v $DIR_MOUNT_CONF:/etc/nginx/conf.d/default.conf \
+		-p $COMPONENTS_PORT:80 \
 		--name aadc-components \
 		--restart=always \
 		nginx:latest
 }
 
-mkdir -p /home/docker-data/aadc-components
+mkdir -p $DIR_MOUNT_GIT
 
 # Call the function to deploy the application
 deploy_components
