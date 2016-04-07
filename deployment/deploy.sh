@@ -1,4 +1,7 @@
 #!/bin/sh
+
+source variables.sh
+
 deploy_components () {
 	docker stop aadc-components
 	docker rm aadc-components
